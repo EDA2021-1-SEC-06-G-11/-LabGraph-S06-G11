@@ -24,7 +24,7 @@
  *
  """
 
-
+import time
 import sys
 import config
 import threading
@@ -50,6 +50,7 @@ initialStation = None
 # ___________________________________________________
 #  Menu principal
 # ___________________________________________________
+
 
 
 def printMenu():
@@ -84,6 +85,8 @@ def optionThree(cont):
 
 def optionFour(cont, initialStation):
     controller.minimumCostPaths(cont, initialStation)
+   
+
 
 
 def optionFive(cont, destStation):
